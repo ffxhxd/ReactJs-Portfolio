@@ -1,53 +1,25 @@
 @import "../../app.scss";
 .services {
   background: linear-gradient(180deg, #0c0c1d, #111132);
-  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 0 13rem;
+  align-items: center;
+  gap: 4rem;
+  height: 100%;
+
+  
   @include mobile {
     padding: 1rem;
   }
 
-  .textContainer {
-    flex: 1;
-    align-self: flex-end;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-    @include mobile {
-      align-self: center;
-      text-align: center;
-      flex-direction: column;
-    }
-
-    p {
-      font-weight: 200;
-      font-size: 20px;
-      color: gray;
-      text-align: right;
-      padding: 2rem;
-      margin-top: 2rem;
-    }
-
-    hr {
-      width: 500px;
-      border: none;
-      border-top: 0.5px solid gray;
-
-      @include mobile {
-        width: 300px;
-      }
-    }
-  }
   .titleContainer {
-    flex: 2;
+    flex: 1;
     display: flex;
-    flex-direction: column;
+    gap: 1rem;
     align-items: center;
-
+    margin-top: 2rem;
+   
+  
     @include mobile {
       width: 100%;
     }
@@ -55,7 +27,7 @@
     .title {
       display: flex;
       align-items: center;
-      gap: 50px;
+      gap: 5rem;
 
       @include mobile {
         flex-direction: column;
@@ -102,53 +74,75 @@
       }
     }
   }
+
+
   .listContainer {
     flex: 2;
-    display: flex;
-    max-width: 1366px;
-    margin: auto;
-
+      display: flex;
+      align-items: center;
+      overflow-x: scroll;
+      white-space: nowrap;
+      width: 99%;
+      scrollbar-width:none;
+     
+     
+      img{
+      width: 180px;
+       padding:0 1rem;
+      }
+   
     @include mobile {
       flex-direction: column;
       width: 100%;
     }
 
-    .box {
-      padding: 50px;
-      border: 0.5px solid gray;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+   
+  }
+  .listContainer::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
 
-      @include mobile {
-        
-        align-items: center;
-        gap: 3px;
-        padding: 10px;
 
+  .educationContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .ecflexbox {
+      text-align: center;
+    
+      h1 {
+        color: orange;
+        font-size: 24px;
+        margin-bottom: 10px;
       }
-
-      p {
-        @include mobile {
-         padding: 8px;
-        }
+    
+      div {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #fff;
       }
-
-      button {
-        padding: 10px;
-        background-color: orange;
-        border: none;
-        cursor: pointer;
-
-        @include mobile {
-          background-color: transparent;
-          border: 1px solid orange;
-          border-radius: 5px;
-          color: orange;
-          width: 50%;
-          padding: 5px;
-        }
+    }
+    
+    .ecflexbox2 {
+      margin-top: 20px;
+      text-align: center;
+    
+      h1 {
+        color: orange;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+    
+      div {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #fff;
       }
     }
   }
+
 }
