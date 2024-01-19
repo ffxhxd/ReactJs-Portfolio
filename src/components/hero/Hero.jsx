@@ -1,5 +1,6 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
+import { saveAs } from 'file-saver';
 
 const textVariants = {
   initial: {
@@ -38,6 +39,14 @@ const sliderVariants = {
 };
 
 const Hero = () => {
+
+  const handleDownload = () => {
+    // Change the file path to the location of your resume PDF
+    const resumeFilePath = "../../../public/FhdRes.pdf"
+    // Trigger the file download
+    saveAs(resumeFilePath, 'resume.pdf');
+  };
+
   return (
     <div className="hero">
       <div className="wrapper">
@@ -54,9 +63,10 @@ const Hero = () => {
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
              <motion.a
-             href={"#Portfolio"}
+           
+             onClick={handleDownload}
              >
-             See the Latest Works
+             Download Resume
              </motion.a>
             </motion.button>
             <motion.button variants={textVariants}>

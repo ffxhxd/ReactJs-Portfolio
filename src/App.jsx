@@ -15,19 +15,19 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      <section id="About">
+       <section id="About">
         <Parallax type="services" />
-      </section>
+      </section> 
       <section>
         <Services />
       </section>
-      <section id="Portfolio">
+      {/* <section id="Portfolio">
         <Parallax type="portfolio" />
-      </section>
-      <Portfolio />
+      </section> */}
+      {/* <Portfolio />
       <section id="Contact">
-        <Contact />
-      </section>
+        <Contact /> */}
+      {/* </section> */}
     </div>
   );
 };

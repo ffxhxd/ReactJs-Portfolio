@@ -8,8 +8,6 @@
 
   .wrapper {
     max-width: 1366px;
-    height: 100%;
-    
     margin: 0 13rem;
     @include mobile {
      margin: auto;
@@ -20,11 +18,11 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 40px;
 
       @include mobile {
-        height: 50%;
+        margin-top: 3rem;
         width: 100%;
         gap: 20px;
         align-items: center;
@@ -61,6 +59,9 @@
 
       img {
         width: 50px;
+        @include mobile{
+          display: none;
+        }
       }
     }
   }
@@ -72,16 +73,18 @@
     right: 12rem;
 
     @include mobile {
-      height: 50%;
+      height: 65%;
       width: 100%;
       top: unset;
-      bottom: 0;
+      bottom: 0rem;
+      right:-1rem;
     }
 
     img{
       width: 100%;
       height: 100%;
       object-fit: cover;
+      
     }
   }
 
@@ -94,5 +97,9 @@
     width: 50%;
     font-weight: bold;
     z-index: 0;
+    @include mobile{
+      font-size: 17rem;
+      top: 200px;
+    }
   }
 }
