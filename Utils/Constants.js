@@ -1,23 +1,56 @@
+import craftsyGIF from "../public/craftsy.gif";
+import netlifyGIF from "../public/netlify.gif";
+import foodGIF from "../public/food.gif";
+import wayGIF from "../public/waytome.gif";
+
 export const items = [
   {
     id: 1,
     title: "Craftsy - Ecommerce",
     link: "https://craftsy.netlify.app/",
-    img: "https://i.pinimg.com/originals/e9/4c/ab/e94cabbb920fde45639aec91bac309ce.jpg",
-    desc: "ECommerce app for Handmade items with MongoDB for storage, Express for HTTP, React for frontend, Node.js runtime, JWT for auth, Stripe for payments, featuring product filtering, sorting, search, and efficient traffic handling. https://craftsy.netlify.app",
+    tech: " React, Node, MongoDB, Express, CSS, Braintree, JWT.",
+    githubLink:
+      "https://github.com/ffxhxd/CRAFTSY-Ecommerce-web-app-for-Handmade-items",
+    img: craftsyGIF,
+    desc: `Craftsy was my final year project aimed at addressing the challenges faced by artisans in Kashmir. With a thriving market for handicrafts and millions of tourists, we observed that artisans were not reaping the deserved profits. To bridge this gap, we developed an e-commerce app using the MERN stack.
+
+    I focused on UI and utilized ReactJS to create a user-friendly platform. The app allowed artisans to directly list and sell their handmade products globally, eliminating middlemen. Key features included product filtering, sorting, and secure user authentication. AXIOS was used for efficient API communication, and a fully functional shopping cart was implemented using React Context API.
+    
+    In addition, we also integrated payment gateway`,
   },
   {
     id: 2,
-    title: "Tesla.com CLONE",
-    link: "https://cloneofteslabyfahad.netlify.app/",
-    img: "https://c4.wallpaperflare.com/wallpaper/20/1004/36/car-tesla-motors-tesla-roadster-supercars-wallpaper-preview.jpg",
-    desc: "Using ReactJs and Styled Components. ---https://cloneofteslabyfahad.netlify.app",
+    title: "NETFLIX GPT",
+    tech: " React, Tailwind CSS, Firebase, TMDB APIS, Redux Toolkit, Custom Hooks.",
+    link: "https://netflixgptfahad.netlify.app/",
+    githubLink: "https://github.com/ffxhxd/NetflixGPT",
+    img: netlifyGIF,
+    desc: "Netflix like web application with the Power of TMDB APIs to search any movie you want. Configured Tailwind CSS for responsive and visually appealing designs. Implemented a secure user authentication system with Firebase. Integrated The Movie Database APIs for a powerful movie search functionality. Integrated Redux for State management, allowing for efficient user session handling. Integrated with The Movie Database TMDB API to fetch data of movies. Utilized custom hooks to fetch and update movie data in the Redux store. Added Multi-Language support to the app.",
   },
   {
     id: 3,
-    title: "Omnifood",
-    link: "https://ffxhxd.github.io/omnifood/",
-    img: "https://media.istockphoto.com/id/1409236261/photo/healthy-food-healthy-eating-background-fruit-vegetable-berry-vegetarian-eating-superfood.jpg?b=1&s=612x612&w=0&k=20&c=2zneB18UvroqNeKhG13kCT-jgMuxvHHpEcWKhNDFxBk=",
-    desc: "Food delivery website using Vanilla JS, HTML and CSS. --- https://ffxhxd.github.io/omnifood",
+    title: "FOOD ORDERING WEBSITE",
+    link: "NOT LIVE [CORS ISSUE]",
+    githubLink: "https://github.com/ffxhxd/React-Food-Ordering-Website",
+    tech: " React, SCSS, Parcel, Live SIWIGGY.COM APIS, Redux Toolkit, JEST, RTK.",
+    img: foodGIF,
+    desc: `Food Ordering website like Swiggy.com 
+    Developed Responsive UI using React.
+    Utilized Parcel Bundler for project bundling.
+    Maintained a Scalable and Organized codebase.
+    Integrated Swiggy.com APIs seamlessly.
+    Developed a shopping cart using Redux Toolkit.
+    Conducted comprehensive Unit and Integration testing.
+    Ensured application reliability using Jest and React Testing Library.
+    Implemented Dynamic rendering of food items and details.`,
+  },
+  {
+    id: 4,
+    title: "Wayto.me ClONE",
+    tech: " React, SCSS, Javascript",
+    link: "https://waytomeclone.netlify.app/",
+    githubLink: "https://github.com/ffxhxd",
+    img: wayGIF,
+    desc: `Clone of https://wayto.me/ using React.js and SCSS`,
   },
 ];

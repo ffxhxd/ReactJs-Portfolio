@@ -1,7 +1,6 @@
 import "./services.scss";
 import { easeInOut, motion, useInView } from "framer-motion";
 
-
 // const variants = {
 //   initial: {
 //     x: -500,
@@ -21,45 +20,43 @@ import { easeInOut, motion, useInView } from "framer-motion";
 
 const sliderVariants = {
   initial: {
-    x: "0%",
+    x: "30%",
   },
   animate: {
     x: "-80%",
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
+      repeatType: "mirror",
       duration: 20,
       ease: "linear",
     },
   },
 };
-
 
 const smallScreenSliderVariants = {
   initial: {
     x: "50%",
   },
   animate: {
-    x: "-200vw", 
+    x: "-200vw",
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
-      duration: 20,
+      repeatType: "mirror",
+      duration: 30,
       ease: "linear",
     },
   },
 };
 
-
 const sliderTextVariants = {
   initial: {
-    x: "0%",
+    x: "-70%",
   },
   animate: {
     x: "70%",
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
+      repeatType: "mirror",
       duration: 20,
       ease: "linear",
     },
@@ -73,7 +70,7 @@ const smallScreenSliderTextVariants = {
     x: "230vw", // Modify the animation for small screens
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
+      repeatType: "mirror",
       duration: 20,
       ease: "linear",
     },
@@ -81,46 +78,64 @@ const smallScreenSliderTextVariants = {
 };
 
 const Services = () => {
-
   return (
-
-
-<div className="text-container">
-     
-      
+    <div className="text-container">
       <motion.div
-    className="slidingTextContainer"
-    variants={window.innerWidth <= 600 ? smallScreenSliderVariants : sliderVariants}
-    initial="initial"
-    animate="animate"
-  >
-    <img src="/html.png" alt="logos"/>
-    <img src="/css.png" alt="logos"/>
-    <img src="/javascript.png" alt="logos"/>
-    <img src="/react.png" alt="logos"/>
-    <img src="/tailwind.png" alt="logos"/>
-    <img src="/sass.png" alt="logos"/>
-    <img src="/nodejs.png" alt="logos"/>
-    <img src="/mongo-db.png" alt="logos"/>
-    <img src="/sql.png" alt="logos"/>
-    <img src="/npm.png" alt="logos"/>
-    <img src="/c-language-logo.png" alt="logos"/>
-  </motion.div>
-  <motion.div className="skills">
-    SKILLS
-  </motion.div>
-     <motion.div
-     className="slidingSkills"
-      variants={window.innerWidth <= 600 ? smallScreenSliderTextVariants : sliderTextVariants}
-      initial="initial"
-      animate="animate"
-     >
-     HTML, CSS, Javascript, React.js, Tailwind CSS, Bootstrap, SCSS, Redux Toolkit, Jest, Node.js, Express.js, MongoDB, SQL, C++
-     </motion.div>
-  </div>
-  
-  
- 
+        className="slidingTextContainer flex"
+        variants={
+          window.innerWidth <= 600 ? smallScreenSliderVariants : sliderVariants
+        }
+        initial="initial"
+        animate="animate"
+      >
+        <img src="/html.png" alt="logos" />
+        <img src="/css.png" alt="logos" />
+        <img src="/javascript.png" alt="logos" />
+        <img src="/react.png" alt="logos" />
+        <img src="/tailwind.png" alt="logos" />
+        <img src="/sass.png" alt="logos" />
+        <img src="/nodejs.png" alt="logos" />
+        <img src="/mongo-db.png" alt="logos" />
+        <img src="/sql.png" alt="logos" />
+        <img src="/npm.png" alt="logos" />
+        <img src="/visual-studio-code.png" alt="logos" />
+        <img src="/git.png" alt="logos" />
+        <img src="/c-language-logo.png" alt="logos" />
+        <img src="/c-sharp.png" alt="logos" />
+      </motion.div>
+      <motion.div className="skills">SKILLS</motion.div>
+      <motion.div
+        className="slidingSkills"
+        variants={
+          window.innerWidth <= 600
+            ? smallScreenSliderTextVariants
+            : sliderTextVariants
+        }
+        initial="initial"
+        animate="animate"
+      >
+        HTML, CSS, Javascript, React.js, Tailwind CSS, Bootstrap, SCSS, Redux
+        Toolkit, Jest, React Testing Library, Node.js, Express.js, MongoDB, SQL,
+        C++, C#
+      </motion.div>
+      <div className="about-des">
+        <h1>
+          A hardworking individual with excellent academic record desiring to
+          apply for an entry-level software development role. As a fresher
+          software engineer, my objective is to leverage my technical skills,
+          problem-solving abilities, and passion for coding to contribute to the
+          success of a dynamic and innovative software development team. I aim
+          to gain valuable industry experience, collaborate with experienced
+          professionals, and continuously enhance my programming skills to
+          develop cutting-edge software solutions.
+          <p>
+            Education:
+            <span> B. Tech - Computer Science and Engineering</span>
+          </p>
+          <p>Islamic University Of Science and Technology</p>
+        </h1>
+      </div>
+    </div>
   );
 };
 
