@@ -1,5 +1,4 @@
 import { useRef } from "react";
-
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { items } from "../../../Utils/Constants";
 
@@ -19,7 +18,7 @@ const Single = ({ item }) => {
             <h2 className="text-3xl font-bold mb-2 text-[orange]">
               {item.title}
             </h2>
-            <p className="mt-2 text-[orange] text-xl font-semibold  ">
+            <p className="mt-2 text-[orange] text-sm sm:text-lg md:text-xl font-semibold ">
               {item.tech}
             </p>
             <p className="text-white mb-4 mt-2 text-[8px] md:text-base ">

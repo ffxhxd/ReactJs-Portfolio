@@ -20,10 +20,10 @@ import { easeInOut, motion, useInView } from "framer-motion";
 
 const sliderVariants = {
   initial: {
-    x: "30%",
+    x: "85%",
   },
   animate: {
-    x: "-80%",
+    x: "-120%",
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
@@ -35,14 +35,14 @@ const sliderVariants = {
 
 const smallScreenSliderVariants = {
   initial: {
-    x: "50%",
+    x: "90%",
   },
   animate: {
-    x: "-200vw",
+    x: "-300vw",
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
-      duration: 30,
+      duration: 15,
       ease: "linear",
     },
   },
@@ -53,7 +53,7 @@ const sliderTextVariants = {
     x: "-70%",
   },
   animate: {
-    x: "70%",
+    x: "68%",
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
@@ -64,14 +64,14 @@ const sliderTextVariants = {
 };
 const smallScreenSliderTextVariants = {
   initial: {
-    x: "-50%",
+    x: "-55%",
   },
   animate: {
-    x: "230vw", // Modify the animation for small screens
+    x: "280vw", // Modify the animation for small screens
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
-      duration: 20,
+      duration: 16,
       ease: "linear",
     },
   },

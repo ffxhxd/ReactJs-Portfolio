@@ -13,6 +13,7 @@
     padding: 10px;
     margin: auto;
     flex-direction: column;
+    height: 300px;
   }
 
   .textContainer {
@@ -45,13 +46,11 @@
   .formContainer {
     flex: 1;
     position: relative;
-    
+
     @include mobile {
       padding: 20px;
-      width: 85%;
-      margin-bottom:3rem;
+      width: 100%;
     }
-
 
     .phoneSvg {
       stroke: orange;
@@ -75,6 +74,12 @@
 
         @include mobile {
           padding: 10px;
+        }
+      }
+
+      @include mobile {
+        .xxxx {
+          height: 140px;
         }
       }
 

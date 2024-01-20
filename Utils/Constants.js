@@ -1,7 +1,7 @@
-import craftsyGIF from "../public/craftsy.gif";
-import netlifyGIF from "../public/netlify.gif";
-import foodGIF from "../public/food.gif";
-import wayGIF from "../public/waytome.gif";
+import craftsyGIF from "/craftsy.gif";
+import netlifyGIF from "/netlify.gif";
+import foodGIF from "/food.gif";
+import wayGIF from "/waytome.gif";
 
 export const items = [
   {

@@ -1,6 +1,6 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
-import { saveAs } from 'file-saver';
+import { saveAs } from "file-saver";
 
 const textVariants = {
   initial: {
@@ -32,19 +32,18 @@ const sliderVariants = {
     x: "-220%",
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
+      repeatType: "mirror",
       duration: 20,
     },
   },
 };
 
 const Hero = () => {
-
   const handleDownload = () => {
     // Change the file path to the location of your resume PDF
-    const resumeFilePath = "../../../public/FhdRes.pdf"
+    const resumeFilePath = "../../../public/FhdRes.pdf";
     // Trigger the file download
-    saveAs(resumeFilePath, 'resume.pdf');
+    saveAs(resumeFilePath, "resume.pdf");
   };
 
   return (
@@ -57,24 +56,13 @@ const Hero = () => {
           animate="animate"
         >
           <motion.h2 variants={textVariants}>Fahad Farooq</motion.h2>
-          <motion.h1 variants={textVariants}>
-            Frontend developer
-          </motion.h1>
+          <motion.h1 variants={textVariants}>Software Engineer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
-             <motion.a
-           
-             onClick={handleDownload}
-             >
-             Download Resume
-             </motion.a>
+              <motion.a onClick={handleDownload}>Download Resume</motion.a>
             </motion.button>
             <motion.button variants={textVariants}>
-            <motion.a
-             href={"#Contact"}
-             >
-             Contact
-             </motion.a>
+              <motion.a href={"#Contact"}>Contact</motion.a>
             </motion.button>
           </motion.div>
           <motion.img
