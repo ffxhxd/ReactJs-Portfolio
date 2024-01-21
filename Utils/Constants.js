@@ -42,7 +42,8 @@ export const items = [
     Developed a shopping cart using Redux Toolkit.
     Conducted comprehensive Unit and Integration testing.
     Ensured application reliability using Jest and React Testing Library.
-    Implemented Dynamic rendering of food items and details.`,
+    Implemented Dynamic rendering of food items and details.
+    NOT LIVE [CORS ISSUE] + Swiggy keeps changing their API`,
   },
   {
     id: 4,
