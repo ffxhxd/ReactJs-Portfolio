@@ -79,7 +79,7 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        UI DEVELOPER, DESIGNER
+        UI DEVELOPER, DESIGNER, FRONTEND DEVELOPER
       </motion.div>
       <div className="imageContainer">
         <img src="/hero.png" alt="" />

@@ -1,12 +1,12 @@
 import { useRef } from "react";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { items } from "../../../Utils/Constants";
 
 const Single = ({ item }) => {
   return (
     <section className="w-full flex items-center justify-center bg-slate-950 ">
       <div className="container mx-auto">
-        <div className="wrapper flex flex-col md:flex-row items-center bg-[#0b1032] shadow-lg md:rounded-md overflow-hidden">
+        <div className="wrapper flex flex-col md:flex-row items-center  md:rounded-md overflow-hidden">
           <div className="imageContainer md:w-1/2">
             <img
               src={item.img}
@@ -15,13 +15,13 @@ const Single = ({ item }) => {
             />
           </div>
           <motion.div className="textContainer md:w-1/2  p-12 ">
-            <h2 className="text-3xl font-bold mb-2 text-[orange]">
+            <h2 className="text-2xl font-bold mb-2 text-[orange]">
               {item.title}
             </h2>
             <p className="mt-2 text-[orange] text-sm sm:text-lg md:text-xl font-semibold ">
               {item.tech}
             </p>
-            <p className="text-white mb-4 mt-2 text-[8px] md:text-base ">
+            <p className="text-white mb-4 mt-2 text-left text-[12px] md:text-base ">
               {item.desc}
             </p>
             <div className="flex space-x-4">

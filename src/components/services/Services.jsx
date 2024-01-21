@@ -1,5 +1,5 @@
 import "./services.scss";
-import { easeInOut, motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 // const variants = {
 //   initial: {
@@ -23,7 +23,7 @@ const sliderVariants = {
     x: "85%",
   },
   animate: {
-    x: "-120%",
+    x: "-100%",
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
@@ -115,8 +115,8 @@ const Services = () => {
         animate="animate"
       >
         HTML, CSS, Javascript, React.js, Tailwind CSS, Bootstrap, SCSS, Redux
-        Toolkit, Jest, React Testing Library, Node.js, Express.js, MongoDB, SQL,
-        C++, C#
+        Toolkit, Jest, React Testing Library, Figma, Node.js, Express.js,
+        MongoDB, SQL, C++, C#
       </motion.div>
       <div className="about-des">
         <h1>
@@ -128,11 +128,14 @@ const Services = () => {
           to gain valuable industry experience, collaborate with experienced
           professionals, and continuously enhance my programming skills to
           develop cutting-edge software solutions.
-          <p>
-            Education:
-            <span> B. Tech - Computer Science and Engineering</span>
-          </p>
-          <p>Islamic University Of Science and Technology</p>
+        </h1>
+        <h1>
+          Education:{" "}
+          <span className="text-[orange] font-bold">
+            B. Tech - Computer Science and Engineering
+          </span>{" "}
+          - Islamic University Of Science and Technology{" "}
+          <span className="text-[orange]">(2019 - 2023)</span>
         </h1>
       </div>
     </div>
